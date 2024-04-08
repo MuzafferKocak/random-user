@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-const SavedUsers = (props) => {
+const NewUsers = (props) => {
   console.log(props);
 
   const [savedUsers,setSavedUsers] = useState([])
@@ -20,7 +20,7 @@ const SavedUsers = (props) => {
       }
     ]);
   } 
-  console.log(savedUsers);
+ 
 
 
 
@@ -72,4 +72,4 @@ const SavedUsers = (props) => {
   );
 };
 
-export default SavedUsers;
+export default NewUsers;

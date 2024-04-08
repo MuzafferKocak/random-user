@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 
-import UserInfos from "./UserInfos";
-import SavedUsers from "./SavedUsers";
+import UserInfo from "./UserInfo";
+
+import NewUsers from "./NewUsers";
 
 const UserCard = () => {
   const [userData, setUserData] = useState({
@@ -37,8 +38,8 @@ const UserCard = () => {
     <div className="container">
       
 
-        <UserInfos userData={userData} />
-        <SavedUsers getuser={getUser} userData={userData} />
+        <UserInfo userData={userData} />
+        <NewUsers getuser={getUser} userData={userData} />
       
       
     </div>

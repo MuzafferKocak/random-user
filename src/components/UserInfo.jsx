@@ -8,7 +8,7 @@ import womanAgeSvg from "../assets/image/growing-up-woman.svg";
 import mapSvg from "../assets/image/map.svg";
 import phoneSvg from "../assets/image/phone.svg";
 import padlockSvg from "../assets/image/padlock.svg";
-const UserInfos = ({ userData }) => {
+const UserInfo = ({ userData }) => {
   // console.log(userData);
   const fullName = `${userData.name.first} ${userData.name.last}`;
 
@@ -29,7 +29,7 @@ const UserInfos = ({ userData }) => {
         <img
           src={userData.picture.large}
           alt=""
-          className="user-img rounded-circle  shadow border-2 p-1 bg-white"
+          className="user-img rounded-circle shadow border-2 p-1 bg-secondary"
         />
       </div>
       <div className="all-infos d-flex flex-column align-items-center justify-content-center gap-3 mb-3">
@@ -136,4 +136,4 @@ const UserInfos = ({ userData }) => {
   );
 };
 
-export default UserInfos;
+export default UserInfo;
